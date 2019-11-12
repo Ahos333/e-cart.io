@@ -1,0 +1,240 @@
+/* Set Up */
+:root {
+    --primary: #B3001B;
+    --secondary: #84ACCE;
+    --light: #FFF;
+    --dark: #030301;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'sans-serif', 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-around;
+    background: var(--primary);
+    padding: 20px 0;
+}
+
+.logo, .search-bar, .nav {
+    display: inline-block;
+    border: 1px solid blue;
+    width: 30%;
+    height: 100%;
+}
+
+.logo {
+    background: var(--secondary);    
+}
+
+.search-bar {
+    background: var(--secondary);    
+}
+
+.nav {
+    background: var(--secondary);    
+}
+
+.header .logo {
+    background: url(../img/logo.jpg) center center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 50%;
+    width: 50px;
+    height: 30px;
+    
+}
+
+/* Search Bar */
+.search-bar {
+    display: inline-block;
+}
+
+.search-bar input {
+    margin: auto;
+}
+
+/* Navigation */
+nav {
+    text-indent: 10px;
+
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    flex: 1;
+    text-decoration: none;
+    color: var(--light);
+    padding: 0 5px;
+}
+
+.nav-links li a:hover {
+    background: var(--secondary);
+}
+
+.icons {
+    display: inline-block;
+}
+
+.icons i {
+    border: 1px solid blue;
+    
+}
+/* Content */
+.page-wrapper {
+    background: var(--light);
+}
+
+/* Slide */
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-flow: nowrap;
+    align-items: baseline;
+    align-content: space-between;
+    background: var(--dark);
+    width: 100%;
+    height: 500px;
+    color: var(--light);
+}
+
+.deals, .goodwill, .online {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+}
+
+.deals {
+    background: var(--primary);
+}
+
+.content .items {
+    width: 30px;
+    height: 30px;
+    background: var(--secondary);
+}
+footer {
+    background: var(--secondary);
+}
+
+/*
+Very Light Malachite Green: #61E786
+
+Rich Black: #00100B; 
+
+
+
+For E-commerce:
+Light Cobalt Blue: #84ACCE
+Rich Black: #030301
+Alabama Crimson: #B3001B
+White: #FFF
+
+*/
