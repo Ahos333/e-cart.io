@@ -14,7 +14,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-
+<!-- css -->
 <link rel="stylesheet" href="../CSS/form.css">
 
 <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
@@ -39,19 +39,27 @@
 <body>
 	<section class="wrapper">
 		<form class="login-form" action="index.html" method="POST" >			<h1 class="section-title">Sign-In</h1>
-			<label for="email">Email Address</label>
-  			<input class="main-text" type="text" name="email" value="email" required>
-			<label for="password">Password</label>
-			<span><a href="sign-up.html">Forgot Password?</a></span>
-  			<input class="main-text" type="text" name="password" value="password" required>
+			<div class="email">
+				<label for="email">Email Address</label>
+  				<input class="main-text" type="text" name="email">
+			</div>
+			<div class="password">
+				<label for="password">Password</label>
+				<span><a href="sign-up.html">Forgot Password?</a></span>
+  				<input class="main-text" type="text" name="password">
+			</div>
 			<div class="checkbox">	
 				<input type="checkbox">
 				<span>Keep me Signed In</span>
 			</div>
-			<input class="btn" type="button" value="Sign In"> 
-			<h3>Don't have an account?</h3>
-			<input class="btn" type="button" value="Sign Up">
+			<button href="index.html" class="btn submit-btn">Sign In</button> 
+			<div class="divide"></div>
+			<div class="pg-change">
+				<h3>Don't have an account?</h3>
+				<button class="btn pg-btn"><a href="sign-up.html">Sign Up</a></button>
+			</div>
 		</form>
+			
 	</section>
 
 </body>
