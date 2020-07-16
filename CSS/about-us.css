@@ -1,0 +1,41 @@
+/* About Us Section */
+.about-section {
+	display: flex;
+	justify-content: center;
+	max-width: calc(100vw - 3%;)[]
+}
+
+.about-left, .about-right {
+	flex: 1;
+}
+
+.about-left {
+	padding: 0.3rem;
+	margin-right: 1rem;
+}
+
+.about-desc {
+	
+}
+
+.about-desc p {
+	max-width: 55ch;
+	text-indent: 1rem;
+	margin: 0.5rem 0 0.5rem 0;
+	padding: 0.5rem;
+}
+
+.about-right {
+	margin: auto;
+	padding: 0.5rem;
+}
+
+.about-right img {
+	width: 100%;
+	margin: auto;
+	height: 300px;
+	margin-left: auto;
+	padding: 0.5rem;
+	border-radius: 50%;
+}
+
