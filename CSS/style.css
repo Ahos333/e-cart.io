@@ -81,12 +81,9 @@
 
 .intro {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	max-width: 1050px;
 	height: 450px;
-	text-align: center;	
+	overflow: hidden;
 }
 
 .intro-img {
@@ -98,6 +95,7 @@
 	background-size: auto;
    background-attachment: fixed;
    background-repeat: no-repeat;
+	overflow-y: hidden;
 	z-index: -11;
 }
 
@@ -116,20 +114,22 @@
 }
 
 .lead {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	animation: appear 2s ease-in;
 }
 
 .lead, .caption {
 	margin-top: 15%;
+	margin-left: 10%;
 	z-index: 111;
 	color: #fff;
+	text-align: left;
 }
 
 .caption {
 	transition: 0.3s linear;
 	font-weight: normal;
-	font-size: 1rem;
+	font-size: 0.8rem;
 	margin-top: 5px;
 }
 
@@ -153,12 +153,16 @@
 	font-size: 1rem;
 	font-weight: bold;
 	color: #fff;
-	background: var(--primary);	
 }
 
 .action-btn {
-	margin-top: 10px;
+	position: absolute;
+	top: 190px;
+	right: 190px;
 	text-transform: uppercase;
+	background-color: var(--primary);
+	padding: 0.3rem;
+
 }
 
 .btn:hover {
@@ -170,6 +174,7 @@
 .info-section {
 	display: flex;
 	justify-content: space-evenly;
+	
 }
 
 .ad-container, .img-container {
@@ -181,6 +186,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
+	margin-left: 5%;
 	margin-right: 5%;
 }
 
@@ -198,6 +204,7 @@
 	height: 300px;
 	mix-blend-mode: darken;
 	background-position: 10% 20%;
+	overflow: hidden;
 }
 
 .back-to-top {
@@ -297,6 +304,18 @@
 	
 	#chk:checked ~ .menu {
 		right: 0;
+	}
+	
+	.intro {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	/* Info Section */
+	.info-section {
+		display: flex;
+		flex-direction: column;
 	}
 	
 	/* Category & Product Section */
