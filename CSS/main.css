@@ -66,6 +66,7 @@ html {
 	--color: #2C2C54;
   --light: #FAF9F9;
   --dark: #3C3744;
+	--category-width: calc(100vw - 5%);
 }
 
 body {
