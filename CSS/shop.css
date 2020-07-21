@@ -4,7 +4,7 @@
 	flex-direction: column;
 	flex-wrap: no-wrap;
 	align-content: center;
-	width: calc(100vw - 5%);	
+	width: var(--category-width);
 	margin: auto;
 }
 
@@ -102,26 +102,30 @@
 
 /* Products Section */
 .product-section {
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
-}
-
-.product-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(3, 1fr);
-	grid-auto-rows: 300px;
+	grid-auto-rows: 250px;
 	grid-gap: 10px;
+	margin: var(--category-width) 1.5rem;
 }
 
 .item-container {
-	width: 100%;
 	display: flex;
+	flex-direction: column;
+	width: 100%;
 	height: 300px;
 	position: relative;
-	overflow-y: hidden;
-	flex-direction: column;
-	background-color: #f4f4f4;
+	overflow-y: hidden;	
+}
+
+.item-container img {
+	position: absolute;
+	width: 100%;
+	mix-blend-mode: darken;
+	height: 50%;
+	margin: 0;
+	padding: 0;
 }
 
 .item-top {
@@ -130,52 +134,189 @@
 	right: 0;
 	top: 0;
 	float: right; 
-	margin: 0.3rem;
+	padding: 0.3rem;
 }
 
 .fa-heart {
 	margin-right: 0.3rem;
 }
 
-.item-bottom {
-	display: flex;
-	flex-direction: column;
-	width: 90%;
-	margin: 0.3rem;
+.fa-heart:hover {
+	color: red;
 }
 
-.item-bottom img {
+.fa-shopping-bag:hover {
+	color: gray;
+}
+
+.item-bottom {
+	display: flex;
+	flex-flow: column nowrap;
 	position: absolute;
-	width: calc(100% - 50px);
-	height: auto;
+	width: 100%;
+	bottom: 0;
+	padding-top: 1.5rem;
+	text-align: center;
+}
+
+.item-price, .item-title, .add-btn {
+	margin-top: 0.3rem;
+	margin-bottom: 0.4rem;
+	padding: 0 0.3rem;
+	text-align: center;
+}
+
+.add-btn {
+	background: var(--primary);
+	padding-right: 0.2rem;
 	margin: 0 auto;
 }
 
-.item-price {
-	margin: auto;
+
+/* Ad Section */
+html,body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+
+/* Cart */
+
+.container {
+  padding: 20px;
+  margin: auto;
 }
 
-.item-title {
-	margin: auto;
+.cart-header {
+  font-weight: bold;
+  font-size: 1.2em; 
+  color: #333;
 }
 
-/*  
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
 
+.cart-row {
+  display: flex;
 
-<!-- Product Section -->
-			<section class="product-section">
-				<div class="product-container">
-				
-					<div class="item-container">
-						<div class="item-top">
-							<i class="fa fa-heart"></i>
-							<i class="fa fa-shopping-bag"></i>
-						</div>
-						<div class="item-bottom">
-							<img src="../img/image10.jpg" class="product-img desktop">
-							<div class="item-price">$9.99</div>
-							<h3 class="item-title">Desktop</h3>
-						</div>
-					</div>
-					
-*/
+}
+
+.cart-item {
+  width: 30%;
+  color: #333;
+}
+
+.cart-price {
+  width: 20%;
+	color: #333;
+}
+
+.cart-quantity {
+  width: 30%;
+}
+
+.cart-item-title {
+  color: #333;
+  margin-left: .5em;
+  font-size: 1.2rem;
+  margin: 0 auto;
+}
+
+.item-quantity-input {
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #56CCf2;
+  background-color: #eee;
+  font-size: 1em;
+  margin-right: 1rem;
+}
+
+.btn-remove-item {
+  width: 75px;
+  height: 30px;
+  color: white;
+  background: rgb(201, 62, 62);
+  outline: none;
+  border-radius: 5px;
+  font-size: .8em;
+	text-align: center;
+	padding: 0.3rem;
+}
+
+.btn-remove-item:hover {
+  background: rgb(175, 53, 53);
+  cursor: pointer;
+}
+
+.cart-total {
+ 	text-align: end;
+ 	margin-right: 20%;
+	color: #333;
+}
+
+.btn-order-items {
+  display: block;
+  color: white;
+  background: #56CCf2;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
+  margin: 30px auto;
+}
+
+.btn-order-items:hover {
+  background: rgb(82, 193, 230);
+  cursor: pointer;
+}
+
+.btn-purchase {
+	position: relative;
+	margin: 0 auto;
+}
+
+.btn-purchase:hover {
+  background: rgb(82, 193, 230);
+  cursor: pointer;
+}
