@@ -14,6 +14,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
+
 <!-- css -->
 <link rel="stylesheet" href="CSS/main.css">
 <link rel="stylesheet" href="CSS/style.css">
@@ -30,12 +31,12 @@
 	<div class="page-loader"></div>
 		<header id="home" class="top-header">
 			<div class="lang-change">
-				<select id="lang">
-					icon
-  					<option value="ENG"><div>icon</div>ENG</option>
-  					<option value="JAP">JAP</option>
-  					<option value="EUR"></option>
-				</select>
+			<ul class="social-media">
+				<li><a class="fab fa-twitter" href="https://www.twitter.com"></a></li>
+     			<li><a class="fab fa-instagram fa-2x" href="https://www.instagram.com"></a></li>
+				<li><a class="fab fa-facebook fa-2x" href="https://www.facebook.com"></a></li>
+      		<li><a class="fab fa-linkedin fa-2x" href="https://www.linkedin.com"></a></li>
+			</ul>
 			</div>
 			<ul class="main-nav">
 				<a class="sign-up-btn" href="html/sign-up.html">Sign Up</a>
@@ -53,8 +54,6 @@
 			<a href="html/shop.html">Shop</a>
 			<a href="html/about-us.html">About Us</a>
 			<a href="html/contact.html"">Contact</a>
-			<a href="html/sign-up.html">Sign Up</a>
-			<a href="html/sign-in.html">Sign In</a>
 			<label for="chk" class="hide-menu-btn">
 			<i class="fas fa-times"></i>
 		</label>
@@ -62,22 +61,11 @@
 		</div>
 		
 		<section class="hero-section">
-			<h2 class="water-mark wm1">E-Cart</h2>
-			<div class="hero-left">
-				<div class="stripes-l"></div>
+			<div class="cta">
+				<h1 class="lead">E-Cart</h1>
+				<h3 class="caption">The site of all of your computer and computer accessory needs</h3>
+				<a href="html/shop.html" class="btn cta-btn">Shop</a>
 			</div>
-			<div class="hero-mid">
-				<div class="cta">
-					<h1 class="lead">Buy The Latest Tech</h1>
-					<h3 class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
-					<a href="html/shop.html" class="btn action-btn">Shop</a>
-				</div>
-			</div>
-			<div class="hero-right">
-				<div class="stripes-r"></div>
-			</div>
-			
-			<h2 class="water-mark-s wm4">E-Cart</h2>
 		</section>
 		
 		<section class="info-section">
@@ -85,12 +73,9 @@
 				<h1>More bang for your buck</h1>
 				<h3>Lorem ipsum dolor sit amet, 						consectetur adipiscing 						elit. Pellentesque non 						neque condimentum, laoreet 						leo nec, interdum lorem.</h3>
 			</div>
-			<div class="img-container">
-				<img src="img/info-img.jpg">
-			</div>
+			<div class="img-container"></div>
 		</section>
 		
-	
 	<a href="#home" class="back-to-top">
 		back to top
 	</a>
@@ -124,13 +109,17 @@
 			
 	</footer>
 	
-	<!-- jQuery -->
+<!-- TweenMax-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+<!-- TimelineMax-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+	
+<!-- jQuery -->
 <script src="JS/jquery-3.4.1.min.js"></script>
 
 <!-- JS File -->
-<script src="JS/script.js">
-
-	
+<script src="JS/script.js"></script>
 
 </body>
 </html>
