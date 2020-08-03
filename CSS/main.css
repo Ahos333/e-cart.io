@@ -139,7 +139,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	padding: 5px;
-	background: #000;
+	background-color: #000;
 }
 
 .social-media {
@@ -180,10 +180,11 @@ footer {
 }
 
 .header {
-	height: 100px;
+	height: 75px;
 	/*  #34495e; */
 	padding: 0 20px;
 	color: var(--dark);
+	overflow: hidden;
 }
 
 .logo {
@@ -203,11 +204,12 @@ footer {
 }
 
 .show-menu-btn, .hide-menu-btn {
+	display: none;
 	transition: 0.4s;
 	font-size: 30px;
 	cursor: pointer;
-	display: none;
 }
+
 .show-menu-btn {
 	float: right;
 }
@@ -228,6 +230,53 @@ footer {
 	display: none;
 }
 
+/* Footer Section */
+.footer {
+	display: flex;
+	flex-direction: column;
+	padding-top: 0.5rem;
+	margin: 0;
+	background-color: var(--primary);
+	
+}
+
+.top-footer {
+	display: flex;
+	justify-content: space-between;
+	color: #fff;	
+}
+
+.top-footer ul {
+	text-align: center; 
+	text-weight: bold;
+	text-height: 120px;
+	font-size: 1.5rem;
+	padding: 0 1rem;
+}
+
+.top-footer ul, .top-footer ul li {
+	margin-bottom: 1.5rem;
+	margin-top: 1rem;
+}
+
+.top-footer li {
+	font-size: 1rem !important;
+}
+
+.bottom-footer {
+	background-color: #000000;	
+	text-align: center;
+	padding: 0.2rem;
+}
+
+.bottom-footer .website a {
+	text-transform: capitalize;	
+}
+
+.bottom-footer:not(.website) {
+	color: #fff; 
+}
+
 /* Navbar Media Queries */
 @media screen and (max-width:800px) {
 	/* Menu Bar */
@@ -243,7 +292,7 @@ footer {
 		position: fixed;
 		width: 100%;
 		height: 100%;
-		background: #333;
+		background: var(--primary);
 		right: -100%;
 		top: 0;
 		text-align: center;
