@@ -1,17 +1,23 @@
 /* Contact Section */
+.section-title {
+	text-align: center;
+}
+
+
 .contact-section {
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	width: 90%;
 	margin: auto;
 }
 
 .contact-form {
 	display: flex;
+	width: 50%;
 	height: 400px;
 	flex-direction: column;
 	background-color: #fff;
-	color: #000;
 	margin: 0.5rem;
 	padding: 0.7rem;
 	border-radius: 0.3rem;
@@ -23,17 +29,23 @@
 }
 
 .contact-form input {
+	color: #fff;
 	margin-bottom: 1rem;
-}
-
-input, textarea {
-      background-color: #000;
+	width: 30%;
 }
 
 input[type=text] {
 	padding: 0.6rem;
-	width: 100%;
 	height: 30px;
+	
+}
+
+input, textarea {
+	width: 100%;
+}
+
+input[type=text], textarea[type=text] {
+	width: 100%;
 	background-color: #f4f4f4;
 	outline: none;
 	border: none;
@@ -46,6 +58,7 @@ textarea {
 	outline: none;
 	border: none;
 	padding: 0.3rem;
+	background-color: #f4f4f4;
 }
 
 textarea[type=text] {
@@ -53,8 +66,8 @@ textarea[type=text] {
 	font-size: 1.7rem;
 }
 
-input:hover {
-	border-bottom: 1px solid var(--primary);
+input:hover, textarea:hover {
+	border-bottom: 1px solid var(--color);
 }
 
 .send-btn {
@@ -62,44 +75,13 @@ input:hover {
 	width: 70%;
 	margin: auto;
 	text-align: center;
-	border: 1px solid #fff;
+	background-color: var(--primary);
+	color: #fff;
 }
 
 .send-btn:hover {
-	background-color: #fff;
+	opacity: 0.9;
 	color: #000;
 }
 
-.contact-info {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-	margin: auto;	
-}
 
-.contact-info h3 {
-	text-align: center;
-}
-
-.social-media {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 1rem;
-	padding: 0;
-}
-
-.social-media li a {
-	margin-right: 0.6rem;
-	padding: 0.5rem;
-	color: var(--primary);
-	transiton: 0.3s ease-in;
-	cursor: pointer;
-	font-size: 1rem;
-}
-
-.social-media li a:hover {
-	opacity: 0.9;
-	transform: scale(1.2);
-}
