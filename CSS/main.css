@@ -193,6 +193,11 @@ footer {
 	text-transform: uppercase;
 }
 
+.logo a {
+	text-decoration: none;
+	color: var(--dark);
+}
+
 .menu {
 	float: right;
 	line-height: 100px;
@@ -202,6 +207,11 @@ footer {
 	padding: 0 10px;
 	color: var(--dark);
 }
+
+.menu a:nth-child(5), .menu a:nth-child(6) {
+	display: none;
+}
+
 
 .show-menu-btn, .hide-menu-btn {
 	display: none;
@@ -219,7 +229,7 @@ footer {
 	line-height: 100px;
 }
 
-.menu a:hover, .main-nav a:hover, .show-menu-btn:hover, .hide-menu-btn:hover {
+.menu a:hover, .main-nav a:hover, .show-menu-btn:hover, .hide-menu-btn:hover, .cell-menu a:hover {
 	color: #3498db;
 }
 
@@ -227,6 +237,11 @@ footer {
 	position: absolute;
 	visibilitiy: hidden;
 	z-index: -1111;
+	display: none;
+}
+
+/* Cell Menu */
+.cell-menu {
 	display: none;
 }
 
@@ -266,7 +281,7 @@ footer {
 .bottom-footer {
 	background-color: #000000;	
 	text-align: center;
-	padding: 0.2rem;
+	padding: 0.3rem;
 }
 
 .bottom-footer .website a {
@@ -308,6 +323,10 @@ footer {
 		color: var(--light);
 	}
 	
+	.menu a:nth-child(5), .menu a:nth-child(6) {
+		display: block;
+	}
+	
 	.hide-menu-btn {
 		position: absolute;
 		top: 40px;
@@ -322,3 +341,25 @@ footer {
 		right: 0;
 	}
 }
+
+@media screen and (max-width:600px) {
+	/* Cell Menu */
+	.cell-menu {
+		display: flex;
+		justify-content: space-evenly;
+		position: fixed;
+		bottom: 0;
+		width: 100vw;
+		height: 80px;
+		background-color: var(--dark);
+		transition: 0.3 ease;
+	}
+	
+	.cell-menu a {
+		text-decoration: none;
+		color: var(--light);
+		margin: auto;
+	}
+	
+}
+
