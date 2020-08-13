@@ -22,8 +22,10 @@
 .category-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 10px;
+	grid-row-gap: 150px;
+	grid-column-gap: 50px;
 	grid-auto-rows: 200px;
+	margin-bottom: 1rem;
 }
 
 .category-section .category {
@@ -97,7 +99,8 @@
 	height: 300px;
 	position: relative;
 	overflow-y: hidden;	
-	margin-bottom: 0.3rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 .item-container img {
@@ -115,7 +118,8 @@
 	right: 0;
 	top: 0;
 	float: right; 
-	padding: 0.3rem;
+	padding: 0.6rem 0.5rem;
+	background-color: var(--primary);
 }
 
 .fa-heart {
