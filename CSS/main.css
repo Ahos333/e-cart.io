@@ -17,15 +17,11 @@ html {
 	background-color: #48dbfb60;
 }
 
-/* Scroll Bar 
+/* Scroll Bar */
 
 ::-webkit-scrollbar {
 	width: 10px;
 	background-color: #f1f1f1;
-}
-
-::-webkit-scrollbar-button {
-
 }
 
 ::webkit-scrollbar-track {
@@ -33,32 +29,9 @@ html {
 	background-color: #fff;
 }
 
-::-webkit-scrollbar-track-piece {
-
-}
-
 ::webkit-scrollbar-thumb {
 	background-color: #353b48;
 }
-
-::-webkit-scrollbar-corner {
-
-}
-
-::-webkit-resizer {
-
-}
-*/
-
-/*  
-::-webkit-scrollbar              
-::-webkit-scrollbar-button       
-::-webkit-scrollbar-track        
-::-webkit-scrollbar-track-piece  
-::-webkit-scrollbar-thumb       
-::-webkit-scrollbar-corner      
-::-webkit-resizer                
-*/
 
 :root {
   --primary: #84ACCE;
@@ -123,7 +96,7 @@ a, .action-btn {
 	text-transform: uppercase;
 }
 
-section:not(.intro) {
+section:not(.hero-section) {
 	margin-top: 2rem;
 	margin-bottom: 3rem;
 }
@@ -180,32 +153,41 @@ footer {
 }
 
 .header {
-	height: 75px;
+	height: 50px;
 	/*  #34495e; */
-	padding: 0 20px;
-	color: var(--dark);
 	overflow: hidden;
+	background-color: var(--color);
+}
+
+.logo, .menu {
+	display: flex; 
+	align-items: center;
+	line-height: 1.5rem;
+	height: 100%;
+}
+
+.logo a, .menu a {
+	color: #fff;
+	margin: auto 0;
+
 }
 
 .logo {
-	line-height: 100px;
 	float: left;
 	text-transform: uppercase;
 }
 
 .logo a {
 	text-decoration: none;
-	color: var(--dark);
+	margin-left: 0.3rem;
 }
 
 .menu {
 	float: right;
-	line-height: 100px;
 }
 
 .menu a {
-	padding: 0 10px;
-	color: var(--dark);
+	margin-right: 1.5rem;
 }
 
 .menu a:nth-child(5), .menu a:nth-child(6) {
