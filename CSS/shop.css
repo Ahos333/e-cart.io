@@ -1,3 +1,37 @@
+.cell-menu {
+	z-index: 9999;
+}
+
+/* Shopping Bag & Cart */
+.nav-bag {
+	position: static;
+	color: #fff;
+}
+
+.item-amount {
+	background-color: red;
+	padding: 0.3rem;
+	width: 20px;
+	height: 20px;
+	border-radius: 60%;
+	color: #fff;
+}
+
+.show-cart-item, .hide-cart-item {
+	display: none;
+}
+.top-cart {
+	display: none;
+}
+
+.top-cart:hover {
+	display: block;
+	width: 70vw;
+	height: 70vh;
+	background-color: var(--dark);
+	color: #fff;
+}
+
 /* Category Section */
 .category-section, .products-section {
 	display: flex;
